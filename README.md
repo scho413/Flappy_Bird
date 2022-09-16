@@ -10,4 +10,4 @@ Starting the program
 =============================================================================================
 Open "MiniProject.qpf" file in the quartus and run the program
 
-*More details are in the report*
+*More details are in the final report 305.pdf*
