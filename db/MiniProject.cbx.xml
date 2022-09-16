@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="MiniProject">
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|altpll1:inst|altpll:altpll_component" CBX_FILE_NAME="altpll1_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|flappy_bird:game|char_rom:textscore|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|gameover:game_over_screen|char_rom:scoretext|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|gameover:game_over_screen|char_rom:text|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|menu:menu_screen|char_rom:play|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|menu:menu_screen|char_rom:single|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|menu:menu_screen|char_rom:title|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|flappy_bird:game|char_rom:textlives|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|menu:menu_screen|char_rom:practice|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|menu:menu_screen|char_rom:rst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|flappy_bird:game|bird_move:bird|char_rom:bird|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MiniProject|display:inst8|menu:menu_screen|char_rom:pse|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kt91.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

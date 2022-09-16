@@ -1,0 +1,62 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.all;
+USE  IEEE.STD_LOGIC_ARITH.all;
+USE  IEEE.STD_LOGIC_SIGNED.all;
+
+
+ENTITY pipe_move IS
+	PORT
+		( clk, horiz_sync	: IN std_logic;
+        pixel_row, pixel_column		: IN std_logic_vector(9 DOWNTO 0);
+		  red, green, blue 				: OUT std_logic);		
+END pipe_move;
+
+architecture behavior of pipe_move is
+
+SIGNAL pipe_on					: std_logic;
+SIGNAL x_size 					: std_logic_vector(10 DOWNTO 0);  
+SIGNAL y_size				: std_logic_vector(9 DOWNTO 0);
+SIGNAL pipe_y_pos				: std_logic_vector(9 DOWNTO 0);
+SiGNAL pipe_x_pos				: std_logic_vector(10 DOWNTO 0);
+SIGNAL pipe_x_motion			: std_logic_vector(10 DOWNTO 0);
+SIGNAL pipe_y_pos2			: std_logic_vector(9 DOWNTO 0);
+SIGNAL counter					: integer := 0;
+
+BEGIN           
+
+x_size <= CONV_STD_LOGIC_VECTOR(20,11);
+y_size <= CONV_STD_LOGIC_VECTOR(100,10);
+-- pipe_x_pos and pipe_y_pos show the (x,y) for the centre of ball
+pipe_y_pos <= CONV_STD_LOGIC_VECTOR(300,10);
+
+pipe_on <= '1' when ((pipe_x_pos <= '0' & pixel_column + x_size) and ('0' & pixel_column <= pipe_x_pos + x_size)
+					and (pipe_y_pos <= pixel_row + y_size) and (pixel_row <= pipe_y_pos + y_size))
+					else '0';
+
+
+-- Colours for pixel data on video signal
+-- Changing the background and ball colour by pushbuttons
+red <= not pipe_on;
+green <= not pipe_on;
+blue <=  not pipe_on;
+
+
+Move_Pipe: process (horiz_sync)  	
+begin
+	-- Move ball once every vertical sync
+	if (rising_edge(horiz_sync)) then		
+		counter <= counter + 1;
+		-- Bounce off top or bottom of the screen
+		if (counter > 200) then
+			counter <= 0;
+			if (pipe_x_pos <= x_size) then
+				pipe_x_motion <= - CONV_STD_LOGIC_VECTOR(1,11);
+			end if;
+			-- Compute next ball Y position
+			pipe_x_pos <= pipe_x_pos + pipe_x_motion;
+		end if;
+	end if;
+end process Move_Pipe;
+
+END behavior;
+

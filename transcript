@@ -1,0 +1,308 @@
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.test_lfsr
+# vsim -voptargs="+acc" work.test_lfsr 
+# Start time: 12:20:14 on May 18,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd(44): (vopt-3473) Component instance "DUT : LFSR_PRNG" is not bound.
+#         Region: /test_LFSR
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# ** Warning: (vsim-3473) Component instance "DUT : LFSR_PRNG" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /test_lfsr File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+add wave -position end  sim:/test_lfsr/clk
+add wave -position end  sim:/test_lfsr/rst
+add wave -position end  sim:/test_lfsr/prn
+add wave -position end  sim:/test_lfsr/full_period
+run
+run
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error (suppressible): E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd(44): (vopt-1270) Bad default binding for component instance "DUT: LFSR".
+#  (Component port "prn" is not on the entity.)
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Break key hit
+# Break key hit
+restart -f
+# No Design Loaded!
+# Break key hit
+# Break key hit
+# Break key hit
+vsim -voptargs=+acc work.test_lfsr
+# vsim -voptargs="+acc" work.test_lfsr 
+# Start time: 12:20:14 on May 18,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd(44): (vopt-1270) Bad default binding for component instance "DUT: LFSR".
+#  (Component port "prn" is not on the entity.)
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 12:24:16 on May 18,2021, Elapsed time: 0:04:02
+# Errors: 2, Warnings: 1
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim -voptargs=+acc work.test_lfsr
+# vsim -voptargs="+acc" work.test_lfsr 
+# Start time: 12:25:18 on May 18,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd(44): (vopt-1272) Length of output is 8; length of component port is 3.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 12:25:19 on May 18,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim -voptargs=+acc work.test_lfsr
+# vsim -voptargs="+acc" work.test_lfsr 
+# Start time: 12:26:01 on May 18,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# Loading work.lfsr(behaviour)#1
+add wave -position 3  sim:/test_lfsr/clk
+add wave -position 4  sim:/test_lfsr/rst
+add wave -position 5  sim:/test_lfsr/prn
+add wave -position 6  sim:/test_lfsr/full_period
+add wave -position end  sim:/test_lfsr/clk
+add wave -position end  sim:/test_lfsr/rst
+add wave -position end  sim:/test_lfsr/prn
+add wave -position end  sim:/test_lfsr/full_period
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+run
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 5 errors.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# Loading work.lfsr(behaviour)#1
+# Warning in wave window restart: (vish-4014) No objects found matching '/test_lfsr/clk'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/test_lfsr/rst'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/test_lfsr/prn'. 
+run
+add wave -position end  sim:/test_lfsr/sclk
+add wave -position end  sim:/test_lfsr/srst
+add wave -position end  sim:/test_lfsr/sprn
+add wave -position end  sim:/test_lfsr/full_period
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+add wave -position end  sim:/test_lfsr/sclk
+add wave -position end  sim:/test_lfsr/srst
+add wave -position end  sim:/test_lfsr/sprn
+add wave -position end  sim:/test_lfsr/full_period
+run
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+run
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# Loading work.lfsr(behaviour)#1
+run
+# ** Failure: desired end of simulation
+#    Time: 500 ns  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 33
+# Compile of randomNumber.vhd was successful.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 6 errors.
+# 2 compiles, 1 failed with 6 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd(45): (vopt-1549) At instance DUT the actual expression and the port 'o_lsfr' of component 'work.test_LFSR(RTL).lfsr' have different sizes:  ([8,7]).
+#         Region: /test_LFSR/DUT
+# ** Error (suppressible): E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd(45): (vopt-1549) At instance DUT the actual expression and the port 'o_lsfr' of entity 'work.lfsr' have different sizes:  ([8,7]).
+#         Region: /test_LFSR/DUT
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# ValueMonitorTimeChange: wlfDrawStringValuesOverTime failed (25): checkArgs: WlfValueId for /test_lfsr/DUT/D has no logfile info. (an=00000000, channel=00000000)
+# 
+# ValueMonitorTimeChange: wlfDrawStringValuesOverTime failed (25): checkArgs: WlfValueId for /test_lfsr/DUT/D has no logfile info. (an=00000000, channel=00000000)
+# 
+vsim -voptargs=+acc work.test_lfsr
+# vsim -voptargs="+acc" work.test_lfsr 
+# Start time: 12:26:01 on May 18,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd(45): (vopt-1549) At instance DUT the actual expression and the port 'o_lsfr' of component 'work.test_LFSR(RTL).lfsr' have different sizes:  ([8,7]).
+#         Region: /test_LFSR/DUT
+# ** Error (suppressible): E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd(45): (vopt-1549) At instance DUT the actual expression and the port 'o_lsfr' of entity 'work.lfsr' have different sizes:  ([8,7]).
+#         Region: /test_LFSR/DUT
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Error loading design
+# ValueMonitorTimeChange: wlfDrawStringValuesOverTime failed (25): checkArgs: WlfValueId for /test_lfsr/DUT/D has no logfile info. (an=00000000, channel=00000000)
+# 
+# ValueMonitorTimeChange: wlfDrawStringValuesOverTime failed (25): checkArgs: WlfValueId for /test_lfsr/DUT/D has no logfile info. (an=00000000, channel=00000000)
+# 
+# End time: 13:38:53 on May 18,2021, Elapsed time: 1:12:52
+# Errors: 2, Warnings: 3
+# A time value could not be extracted from the current line
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.test_lfsr
+# ValueMonitorTimeChange: wlfDrawStringValuesOverTime failed (25): checkArgs: WlfValueId for /test_lfsr/DUT/D has no logfile info. (an=00000000, channel=00000000)
+# 
+# vsim -voptargs="+acc" work.test_lfsr 
+# Start time: 13:40:41 on May 18,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# Loading work.lfsr(rtl)#1
+run
+# ** Failure: desired end of simulation
+#    Time: 500 ns  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 37
+run
+# ** Failure: desired end of simulation
+#    Time: 1 us  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 37
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+run
+# ** Failure: desired end of simulation
+#    Time: 500 ns  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 37
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# Loading work.lfsr(rtl)#1
+run
+# ** Failure: desired end of simulation
+#    Time: 500 ns  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 37
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# Loading work.lfsr(rtl)#1
+run
+# ** Failure: desired end of simulation
+#    Time: 500 ns  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 37
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# Loading work.lfsr(rtl)#1
+run
+# ** Failure: desired end of simulation
+#    Time: 500 ns  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 37
+# Compile of randomNumber.vhd was successful.
+# Compile of test_rn.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_lfsr(rtl)#1
+# Loading work.lfsr(rtl)#1
+run
+# ** Failure: desired end of simulation
+#    Time: 500 ns  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 37
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+run
+# ** Failure: desired end of simulation
+#    Time: 500 ns  Iteration: 0  Process: /test_lfsr/testing File: E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd
+# Break in Process testing at E:/COMPSYS305/MiniProjectMODELSIM/test_rn.vhd line 37
+# End time: 15:05:30 on May 18,2021, Elapsed time: 1:24:49
+# Errors: 1, Warnings: 1

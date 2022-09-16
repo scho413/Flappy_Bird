@@ -1,0 +1,97 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity test_LFSR is
+end entity test_LFSR;
+
+architecture RTL of test_LFSR is
+	component lfsr is
+generic(
+  G_M             : integer           := 7          ;
+  G_POLY          : std_logic_vector  := "1100000") ;  -- x^7+x^6+1 
+       		port (
+  i_clk           : in  std_logic;
+  i_rstb          : in  std_logic;
+    o_lsfr          : out std_logic_vector (G_M-1 downto 0));
+	end component lfsr;
+
+	constant full_period : time := 20 ns;
+
+	signal sclk : std_logic := '0';
+	signal srst : std_logic := '1';
+	signal sprn : std_logic_vector(6 downto 0);
+begin
+	 --set reset to 1, then to 0
+	srst <= '1';
+	--make the clock
+	Clock : process
+	begin
+		sclk <= not sclk;
+		wait for 5 ns;
+	end process;
+
+	 --test with some inputs
+	testing : process
+	begin
+		wait for 500 ns;
+		assert false report "desired end of simulation" severity failure;
+	end process;
+
+	 --Design Under Test
+	DUT : lfsr
+		port map(
+			i_clk => sclk,
+			i_rstb => srst,
+			o_lsfr => sprn
+		);
+
+end architecture RTL;
+
+
+
+
+
+--library ieee;
+--use ieee.std_logic_1164.all;
+
+--entity test_LFSR is
+--end entity test_LFSR;
+
+--architecture RTL of test_LFSR is
+	--component LFSR is
+--       	port (clk, rst: IN std_logic;
+--        		output: OUT std_logic_vector (7 DOWNTO 0));
+--	end component LFSR;
+
+--	constant full_period : time := 20 ns;
+
+--	signal sclk : std_logic := '0';
+--	signal srst : std_logic := '1';
+--	signal sprn : std_logic_vector(7 downto 0);
+--begin
+	-- set reset to 1, then to 0
+	--srst <= '1', '0' after full_period;
+
+	-- make the clock
+	--Clock : process
+	--begin
+	--	sclk <= not sclk;
+	--	wait for full_period / 2;
+	--end process;
+
+	-- test with some inputs
+	--testing : process
+	--begin
+	--	wait for 500 ns;
+	--	assert false report "desired end of simulation" severity failure;
+	--end process;
+
+	-- Design Under Test
+	--DUT : LFSR
+	--	port map(
+	--		clk => sclk,
+	--		rst => srst,
+	--		output => sprn
+--		);
+
+--end architecture RTL;

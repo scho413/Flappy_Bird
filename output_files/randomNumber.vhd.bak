@@ -1,0 +1,45 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+entity LFSR IS
+  port (Clk, rst: IN std_logic;
+        output: OUT std_logic_vector (7 DOWNTO 0));
+end LFSR;
+
+architecture behaviour OF LFSR IS
+  signal D: std_logic_vector (15 DOWNTO 0) := "0000000000000001";
+begin
+	output(0) <= D(15);
+	output(1) <= D(13);
+	output(2) <= D(11);
+	output(3) <= D(9);
+	output(4) <= D(7);
+	output(5) <= D(5);
+	output(6) <= D(3);
+	output(7) <= D(1);
+	process(clk)
+	begin
+		if (rising_edge(clk)) then
+			if (rst = '1') then
+				D <= "0000000000000001";
+			else
+				D(1) <= D(0);
+				D(2) <= D(1);
+				D(3) <= D(2);
+				D(4) <= D(0);
+				D(5) <= D(0);
+				D(6) <= D(0);
+				D(7) <= D(0);
+				D(8) <= D(0);
+				D(9) <= D(0);
+				D(10) <= D(0);
+				D(11) <= D(0);
+				D(12) <= D(0);
+				D(13) <= D(0);
+				D(14) <= D(0);
+				D(15) <= D(0);
+				D(0) <= D(15) XOR D(14);
+			end if;
+		end if;
+	end process;
+end architecture behaviour;
